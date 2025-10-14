@@ -3,19 +3,27 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
+    "dev": "cross-env NODE_ENV=development APP_ENV=development next dev",
+    "dev:stage": "cross-env NODE_ENV=development APP_ENV=staging next dev",
+    "build:dev": "cross-env NODE_ENV=production APP_ENV=development next build",
+    "build:stage": "cross-env NODE_ENV=production APP_ENV=staging next build",
+    "build:prod": "cross-env NODE_ENV=production APP_ENV=production next build",
+    "start:stage": "cross-env NODE_ENV=production APP_ENV=staging next start",
+    "start:prod": "cross-env NODE_ENV=production APP_ENV=production next start",
+    "stage": "npm run build:stage && npm run start:stage",
+    "prod": "npm run build:prod && npm run start:prod",
+    "lint": "eslint ."
   },
   "dependencies": {
+    "dotenv": "^17.2.3",
+    "next": "15.5.5",
     "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "next": "15.5.5"
+    "react-dom": "19.1.0"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "cross-env": "^10.1.0",
     "eslint": "^9",
-    "eslint-config-next": "15.5.5",
-    "@eslint/eslintrc": "^3"
+    "eslint-config-next": "15.5.5"
   }
 }
