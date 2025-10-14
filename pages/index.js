@@ -1,22 +1,13 @@
 import Head from "next/head";
+import HomePage from "./Home";
 
-import styles from "@/styles/Home.module.css";
-
-
-
-export default function Home() {
+export default function IndexPage() {
   return (
     <>
       <Head>
         <title>InsurUp Home</title>
       </Head>
-
-      <main className={styles.main}>
-        <p>
-          Current Environment: <strong>{process.env.NEXT_PUBLIC_ENV}</strong>
-        </p>
-        
-      </main>
+      <HomePage />
     </>
   );
 }

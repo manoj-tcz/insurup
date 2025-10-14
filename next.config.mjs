@@ -22,6 +22,15 @@ dotenv.config({ path: envFile, override: true });
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  async redirects() {
+    return [
+      {
+        source: "/Home",
+        destination: "/home",
+        permanent: false,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

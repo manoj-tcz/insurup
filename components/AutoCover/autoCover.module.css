@@ -1,0 +1,146 @@
+.wrapper {
+    width: 100%;
+    max-width: 100%;
+    height: 400px;
+    /* margin: 24px auto 40px; */
+    background: #ffffff;
+    /* border-radius: 24px; */
+    overflow: hidden;
+    opacity: 1;
+}
+
+.inner {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(0,0,0,0.08), rgba(0,0,0,0.08)), url('/images/road-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    /* padding: 24px 32px; */
+    height: 100%;
+}
+
+.leftVisual { position: relative; height: 100%; display: flex; align-items: flex-end; }
+.bgShape { position: absolute; left: 40px; right: 40px; bottom: 0; top: 0; background: #0f5a73; clip-path: polygon(0 0, 72% 0, 100% 100%, 0 100%); border-left: 8px solid #ED9923; }
+
+.carImage1 {
+    position: absolute;
+    width: 191px;
+    height: 420px;
+    top: -164px;
+    left: 257px;
+    opacity: 1;
+    border: 12px solid transparent;
+}
+
+.carImage2 {
+    position: absolute;
+    width: 856px;
+    height: 145px;
+    top: 268px;
+    left: -13.5px;
+    opacity: 1;
+    border: 12px solid transparent;
+}
+
+.carImage3 {
+    position: absolute;
+    width: 616px;
+    height: 303.3877258300781px;
+    top: 87px;
+    left: 84px;
+    opacity: 1;
+}
+
+.rightContent { display: flex; flex-direction: column; align-items: flex-end; gap: 16px; padding-right: 35px; }
+.brand { 
+     
+    position: absolute;
+    width: 133px;
+    height: 45px;
+    top: 930px;
+    left: 1240px;
+    opacity: 1;
+}
+.subtitle {
+    width: 462px;
+    height: 22px;
+    font-family: "Assistant", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0;
+    text-align: right;
+    color: #111111;
+    opacity: 1;
+}
+
+.title {
+    width: 462px;
+    height: 105px;
+    font-family: "Assistant", sans-serif;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-align: right;
+    text-transform: uppercase;
+    color: #111111;
+    opacity: 1;
+    margin: 0;
+}
+
+.ctaRow { margin-top: 8px; display: flex; justify-content: flex-end; }
+.primaryCta {
+    width: 184px;
+    height: 52px;
+    padding: 4px 32px 4px 4px;
+    background: #125C80;
+    color: #fff;
+    border: none;
+    border-radius: 99px;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    opacity: 1;
+}
+.ctaIcon {
+    width: 44px;
+    height: 44px;
+    background: #FFFFFF;
+    color: #125C80;
+    border-radius: 99px;
+    padding: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+
+.description {
+    position: absolute;
+    width: 603px;
+    height: 42px;
+    top: 1250px;
+    left: 790px;
+    font-family: "Assistant", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0;
+    text-align: right;
+    color: #111111B2;
+    opacity: 1;
+}
+
+.description strong {
+    font-weight: 700;
+}
+
+@media (max-width: 992px) {
+    .inner { grid-template-columns: 1fr; gap: 16px; }
+    .leftVisual { order: 2; height: 220px; }
+    .rightContent { order: 1; }
+}
+
+

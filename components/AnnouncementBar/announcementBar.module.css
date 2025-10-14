@@ -1,0 +1,38 @@
+.announcementWrapper {
+  width: 100%;
+  overflow: hidden;
+  background-color: #125c80;
+  border-bottom: 0.5px solid #ffffff;
+  height: 40px; /* from Figma spec */
+  display: flex;
+  align-items: center;
+  display: flex;
+}
+
+.announcementScroll {
+  display: inline-block;
+  white-space: nowrap;
+  padding: 0 15px;
+  animation: scrollLeft 45s linear infinite;
+}
+
+.announcementText {
+  font-size: 14px;
+  font-family: "Assistant", sans-serif;
+  color: #ffffff;
+  letter-spacing: 0.3px;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  border-radius: 4px;
+  padding: 4px 8px;
+  line-height: 1;
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
