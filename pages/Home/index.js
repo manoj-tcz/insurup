@@ -3,7 +3,12 @@ import AnnouncementBar from "../../components/AnnouncementBar/announcementBar";
 import Header from "../../components/Header/header";
 import Hero from "../../components/Hero/hero";
 import AutoCover from "../../components/AutoCover/autoCover";
+import Services from "../../components/Services/services";
+import Policies from "../../components/Policies/policies";
+import HowItWorks from "../../components/HowItWorks/howItWorks";
 import styles from "./style.module.css";
+import AboutUs from "@/components/AboutUs/aboutUs";
+import Testimonials from "@/components/Testimonials/Testimonials";
 
 export default function HomePage() {
   return (
@@ -12,6 +17,11 @@ export default function HomePage() {
       <Header />
       <Hero />
       <AutoCover />
+      <Services />
+      <Policies />
+      <HowItWorks />
+      <AboutUs />
+      <Testimonials />
     </div>
   );
 }

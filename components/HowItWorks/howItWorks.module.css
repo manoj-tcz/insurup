@@ -1,0 +1,238 @@
+.wrapper {
+    width: 100%;
+    background: #ffffff;
+    padding: 80px 0;
+}
+
+.inner {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.leftSection {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+    align-items: center;
+}
+
+.header {
+    text-align: center;
+}
+
+.stepsImageContainer {
+    display: flex;
+    width: 1240px;
+    height: 500px;
+    gap: 147px;
+    opacity: 1;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto 0 auto;
+}
+
+.sectionLabel {
+    font-family: "Assistant", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.08em; /* 8% */
+    text-align: center;
+    
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.sectionTitle {
+    font-family: "Assistant", sans-serif;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 110%;
+    letter-spacing: -0.02em; /* -2% */
+    text-align: center;
+    color: #111827;
+    margin: 0;
+}
+
+.brandHighlight {
+    color: #125C80;
+}
+
+.description {
+    font-family: "Assistant", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -0.02em; /* -2% */
+    text-align: center;
+    color: #111111CC;
+    margin: 0;
+}
+
+.tabsContainer {
+    display: flex;
+    width: 559px;
+    height: 62px;
+    gap: 4px;
+    margin-bottom: 16px;
+    justify-content: center;
+    border-radius: 100px;
+    padding: 4px;
+    background: #DFDFDF42;
+    opacity: 1;
+}
+
+.tab {
+    width: 130px;
+    height: 54px;
+    padding: 20px 44px;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    color: #6b7280;
+    font-family: "Assistant", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab:hover {
+    color: #125C80;
+}
+
+.tab.active {
+    background: #125C80;
+    color: #ffffff;
+    border-color: #125C80;
+    border-radius: 30px;
+}
+
+.stepsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    
+}
+
+.step {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row-reverse; /* show number after content */
+    gap: 20px;
+    position: relative;
+}
+
+.stepNumber {
+    width: 58px;
+    height: 58px;
+    background: #11111114;
+    color: #111827;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Assistant", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    flex-shrink: 0;
+    opacity: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.stepNumberActive {
+    background: #125C80;
+    color: #ffffff;
+}
+
+.stepContent {
+    flex: 1;
+    text-align: right;
+}
+
+.stepTitle {
+    font-family: "Assistant", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 110%;
+    letter-spacing: -0.02em; /* -2% */
+    color: #111827;
+    margin: 0 0 8px 0;
+    text-align: right;
+}
+
+.stepDescription {
+    font-family: "Assistant", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.02em; /* -2% */
+    color: #6b7280;
+    margin: 0;
+}
+
+.stepConnector {
+    position: absolute;
+    right: 24px; /* connector aligns under the number when reversed */
+    top: 57px;
+    width: 2px;
+    height: 44px;
+    background: #e5e7eb;
+    border-left: 2px dashed #e5e7eb;
+}
+
+.rightSection {
+    display: none;
+}
+
+.imageContainer {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.imageContainer img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .sectionTitle {
+        font-size: 36px;
+    }
+    
+    .tabsContainer {
+        flex-wrap: wrap;
+    }
+    
+    .step {
+        gap: 16px;
+    }
+    
+    .stepNumber {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+}

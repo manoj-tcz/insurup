@@ -1,11 +1,14 @@
 .homeWrapper {
-    padding: 30px;
+   
     background-color: #F9F9F9;
     width: 1440px;
     max-width: 100%;
     min-height: 7575.212890625px;
     margin: 0 auto;
     opacity: 1;
+    padding-left: 16px;
+    padding-right: 16px;
+    
 }
 
 .homeTitle {
