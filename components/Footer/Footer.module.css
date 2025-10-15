@@ -1,0 +1,332 @@
+.footer {
+    background: #125C80;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.container {
+    width: 1440px;
+    height: 493.21307373046875px;
+    margin: 0 auto;
+    padding: 80px 100px;
+    display: flex;
+    gap: 40px;
+    align-items: start;
+    opacity: 1;
+    box-sizing: border-box;
+}
+
+/* Left Section */
+.leftSection {
+    flex: 1;
+}
+
+.linksGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 140px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+}
+
+.column:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: -20px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.sectionTitle {
+    font-family: "Assistant", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: right;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.linksList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.link {
+    font-family: "Assistant", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: right;
+    color: #FFFFFFCC;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.link:hover {
+    opacity: 0.8;
+}
+
+/* Right Section */
+.rightSection {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.branding {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    width: 110.69471740722656px;
+    height: 30.879745483398438px;
+    opacity: 1;
+    margin-left: auto;
+}
+
+.logoIcon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    color: #FFFFFF;
+}
+
+.logoText {
+    font-family: "Assistant", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.description {
+    font-family: "Assistant", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: right;
+    color: #FFFFFFCC;
+    margin: 0;
+}
+
+.ctaButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-end; /* align children to right */
+}
+
+.getQuoteBtn {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    background: #FFFFFF;
+    color: #125C80;
+    border: 1px solid #125C80;
+    border-radius: 99px;
+    padding: 4px 30px 4px 4px;
+    font-family: "Assistant", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    width: 177px;
+    height: 52px;
+    opacity: 1;
+    margin-left: auto;
+}
+
+.getQuoteBtn:hover {
+    background: #f0f0f0;
+}
+
+.getQuoteBtn .arrowIcon {
+    color: #125C80;
+    font-size: 16px;
+}
+
+.callSection {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-end; /* right align text and button group */
+}
+
+.callText {
+    font-family: "Assistant", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: right;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.callButton {
+    display: flex;
+    align-items: center;
+    gap: 9.09px;
+    justify-content: flex-end; /* push contents to the right */
+}
+
+.callLabel {
+    font-family: "Assistant", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+.callBtn {
+    width: 40px;
+    height: 40px;
+    padding: 9.09px;
+    background: #FFFFFF;
+    border: 1px solid #125C80;
+    border-radius: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.callBtn:hover {
+    background: #f0f0f0;
+}
+
+.callBtn .arrowIcon {
+    color: #125C80;
+    font-size: 14px;
+}
+
+/* Bottom Section */
+.bottomSection {
+    /* border-top: 1px solid rgba(255, 255, 255, 0.2); */
+    padding: 20px;
+}
+
+.bottomContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.socialMedia {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: flex-start;
+}
+
+/* Social media in the main footer section - align to left */
+.rightSection .socialMedia {
+    justify-content: flex-start;
+    margin-right: auto;
+}
+
+.socialIcon {
+    width: 32px;
+    height: 32px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: "Assistant", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.socialIcon:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.socialSeparator {
+    width: 1px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.copyright p {
+    font-family: "Assistant", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.location p {
+    font-family: "Assistant", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.flag {
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .linksGrid {
+        grid-template-columns: 1fr;
+        gap: 145px;
+    }
+    
+    .column::after {
+        display: none;
+    }
+    
+    .bottomContainer {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}

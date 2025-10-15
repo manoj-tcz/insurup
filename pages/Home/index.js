@@ -9,6 +9,9 @@ import HowItWorks from "../../components/HowItWorks/howItWorks";
 import styles from "./style.module.css";
 import AboutUs from "@/components/AboutUs/aboutUs";
 import Testimonials from "@/components/Testimonials/Testimonials";
+import FAQ from "@/components/FAQ/FAQ";
+import Contact from "@/components/Contact/Contact";
+import Footer from "@/components/Footer/Footer";
 
 export default function HomePage() {
   return (
@@ -22,6 +25,9 @@ export default function HomePage() {
       <HowItWorks />
       <AboutUs />
       <Testimonials />
+      <FAQ />
+      <Contact />
+      <Footer />
     </div>
   );
 }
